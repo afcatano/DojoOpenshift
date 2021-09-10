@@ -16,8 +16,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 let configMap;
 
-
-let message = process.env.MESSAGE + " Hello, %s!";
+//process.env.
+let message = "Buenos dias a todos!!: Hola, %s!";
 
 app.use('/api/greeting', (request, response) => {
   const name = (request.query && request.query.name) ? request.query.name : 'World';
